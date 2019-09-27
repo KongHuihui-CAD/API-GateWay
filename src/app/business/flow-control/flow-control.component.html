@@ -1,0 +1,84 @@
+<h3>流量控制</h3>
+<hr>
+<table class="table table-striped  table-responsive flowcontroltable">
+  <thead>
+      <tr>
+          <th class="first">API名称</th>
+          <th class="second">每秒访问次数</th>
+          <th class="second">每分访问次数</th>
+          <th class="second">每小时访问次数</th>
+          <th class="second">每天访问次数</th>
+          <th class="third">操作</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let items of flowarray">
+          <td>{{items.name}}</td>
+          <td>{{items.level1Limit}}</td>
+          <td>{{items.level2Limit}}</td>
+          <td>{{items.level3Limit}}</td>
+          <td>{{items.level4Limit}}</td>      
+          <td>
+              <!-- <a class="btn btn-info" role="button">
+                  <span class="glyphicon glyphicon-trash" aria-hidden="true" (click)="deleteflow($index)">删除</span>
+              </a> -->
+              <a class="btn btn-define" role="button">
+                  <span class="glyphicon glyphicon-pencil" aria-hidden="true" data-toggle="modal" data-target="#apiflowcontrol" id="editapiflow" (click)="editapiflow($event,items)">编辑</span>
+              </a>
+          </td>
+      </tr>
+  </tbody>
+</table>
+
+ <!-- API流量控制编辑的弹窗 -->
+ <div class="modal fade" id="apiflowcontrol" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">API流量控制项编辑</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              
+          </div>
+          <div class="modal-body">
+                  <div class="form-group row">
+                          <label for="apiname" class="col-md-3">API名称</label>
+                          <input type="text" id="apiname" class="col-md-8" #apiname>
+                       </div>
+                       <div class="form-group row">
+                               <label for="apiunit" class="col-md-3">每秒访问次数</label>
+                               <input type="text" id="apiunit" class="col-md-8" #apiunit>
+                        </div>
+                        <div class="form-group row">
+                               <label for="apiflowcontrol" class="col-md-3">每分访问次数</label>
+                               <input type="text" id="apiflowcontrol1" class="col-md-8" #apiflowcontrol1>
+                        </div>
+                        <div class="form-group row">
+                              <label for="apiflowcontrol" class="col-md-3">每时访问次数</label>
+                              <input type="text" id="apiflowcontrol2" class="col-md-8" #apiflowcontrol2>
+                       </div>
+                       <div class="form-group row">
+                              <label for="apiflowcontrol" class="col-md-3">每天访问次数</label>
+                              <input type="text" id="apiflowcontrol3" class="col-md-8" #apiflowcontrol3>
+                       </div>
+                        <!-- <div class="form-group row">
+                               <label for="apicreatetime" class="col-md-3">创建时间</label>
+                               <input type="text" id="apicreatetime" class="col-md-8">
+                        </div> -->
+                        <!-- <div class="form-group row">
+                               <label for="apiregion" class="col-md-3">地域</label>
+                               <input type="text" id="apiregion" class="col-md-8">
+                        </div> -->
+                        <!-- <div class="form-group row">
+                               <label for="apidescription" class="col-md-3">描述</label>
+                               <input type="text" id="apidescription" class="col-md-8">
+                        </div> -->
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+              <button type="button" class="btn btn-define" (click)="updatesure(apiname.value,apiunit.value,apiflowcontrol1.value,apiflowcontrol2.value,apiflowcontrol3.value)" data-dismiss="modal">确定</button>
+          </div>
+      </div>
+  </div>
+</div>

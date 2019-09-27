@@ -1,0 +1,660 @@
+/* 页面重置 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    color: #333;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, pre, dl, dd, form, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #333;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+.main-wrap {
+    min-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.main-container {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*导航栏*/
+nav {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #0D0735;
+}
+
+.nav-title {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-logo img{
+    width: 100px;
+    height: 80px;
+    float: left;
+    padding-top: 8px;
+}
+
+.header-nav {
+    width: 800px;
+    height: 100%;
+    float: left;
+}
+
+.header-menu {
+    width: 100%;
+    height: 100%;
+}
+
+.header-menu > li {
+    margin: 0 30px;
+    font-size: 14px;
+    color: #ffffff;
+    float: left;
+    cursor: pointer;
+}
+
+.header-menu > li > a, .header-menu > li > a:hover {
+    font-size: 14px;
+    color: #ffffff;
+    float: left;
+    cursor: pointer;
+}
+
+.header-login {
+    width: auto;
+    float: right;
+}
+
+.product-drop:hover .drop-menu {
+    display: block;
+}
+img {
+    vertical-align: 0;
+}
+
+/*banner*/
+.produce-message {
+    width: 100%;
+    height: auto;
+    background: url("../../assets/img/telecom/product.png") no-repeat center center;
+    -webkit-background-size: 100% 500px;
+    background-size: 100% 500px;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+}
+
+.banner-title {
+    width: 750px;
+    height: auto;
+    padding: 60px 0 0 50px;
+}
+
+.banner-title h1 {
+    width: 100%;
+    height: 80px;
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.banner-title p {
+    width: 100%;
+    height: auto;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.71);
+    font-size: 16px;
+}
+
+.banner-title ul {
+    width: 100%;
+    height: auto;
+    padding:10px 30px;
+}
+
+.banner-title ul li {
+    width: 100%;
+    height: auto;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.71);
+    font-size: 16px;
+    list-style-type: disc;
+}
+
+.banner-title a {
+    display: block;
+    width: 124px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    background: #595BFF;
+    margin-top: 60px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*产品介绍*/
+.product-introduction {
+    width: 100%;
+    height: auto;
+}
+
+.introduction-title {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background: #ffffff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(212, 222, 234, 0.5);
+    -moz-box-shadow: 0 2px 4px 0 rgba(212, 222, 234, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(212, 222, 234, 0.5);
+}
+
+.introduction-title ul {
+    width: 1000px;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.introduction-title ul li {
+    width: 248px;
+    height: 100%;
+    float: left;
+}
+
+.introduction-title ul li a {
+    display: block;
+    width: 56px;
+    height: 100%;
+    color: #b8bfd3;
+    font-size: 14px;
+    margin: 0 auto;
+    border-bottom: 2px solid #b8bfd3;
+}
+
+.introduction-title ul li a.product-title-active {
+    color: #1B1DFF;
+    border-bottom: 2px solid #1B1DFF;
+}
+
+/*产品优势*/
+.advantage {
+    width: 1200px;
+    height: auto;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+.advantage h1 {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 30px;
+    color: #0D0735;
+    margin-bottom: 40px;
+}
+
+.advantage table {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 6px 28px 0 rgba(212, 222, 234, 0.5);
+    -moz-box-shadow: 0 6px 28px 0 rgba(212, 222, 234, 0.5);
+    box-shadow: 0 6px 28px 0 rgba(212, 222, 234, 0.5);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #d8e1eb;
+}
+
+.advantage table thead {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #4446FF;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.advantage table thead tr {
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.advantage .table > thead > tr > th, .advantage .table > tbody > tr > th, .advantage .table > thead > tr > td, .advantage .table > tbody > tr > td {
+    padding: 25px;
+    text-align: center;
+    vertical-align: middle;
+    color: #333333;
+    font-size: 13px;
+}
+
+.advantage .table > thead > tr > th, .advantage .table > tbody > tr > th {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 0;
+}
+
+.advantage .table > thead > tr > td, .advantage .table > tbody > tr > td {
+    border-top: 1px solid #d8e1eb;
+}
+
+.advantage .table > thead > tr > td:nth-child(2), .advantage .table > tbody > tr > td:nth-child(2) {
+    background: rgba(27, 29, 255, 0.06);
+    text-align: left;
+}
+
+.advantage .table > thead > tr > td:nth-child(3), .advantage .table > tbody > tr > td:nth-child(3) {
+    text-align: left;
+}
+
+.advantage .table tbody td p{
+    line-height:20px;
+}
+
+/*产品功能*/
+.functionality {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background: #F5F8FA;
+}
+
+.functionality h1 {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 30px;
+    color: #0D0735;
+    margin-bottom: 40px;
+}
+
+.highUser {
+    width: 1000px;
+    height: auto;
+    background: #ffffff;
+    margin: 0 auto 30px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 6px 28px 0 rgba(212, 222, 234, 0.5);
+    -moz-box-shadow: 0 6px 28px 0 rgba(212, 222, 234, 0.5);
+    box-shadow: 0 6px 28px 0 rgba(212, 222, 234, 0.5);
+    padding-bottom: 30px;
+}
+
+.highUser-title {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d8e1eb;
+}
+
+.highUser-title img {
+    width: auto;
+    height: 70px;
+    padding: 20px 14px;
+    vertical-align: middle;
+}
+
+.highUser-title span {
+    display: inline-block;
+    height: 70px;
+    color: #0D0735;
+    font-size: 20px;
+}
+
+.highUser p {
+    width: 100%;
+    height: auto;
+    padding: 10px 70px;
+    font-size: 13px;
+    color: #999999;
+    line-height: 20px;
+}
+
+.highUser ul {
+    width: 100%;
+    height: auto;
+    padding: 10px 70px 10px 100px;
+}
+
+.highUser ul li {
+    padding:10px 0;
+    font-size: 13px;
+    color: #999999;
+    line-height: 20px;
+    list-style-type: disc;
+}
+
+/*应用场景*/
+.application {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background: #0D0735;
+}
+
+.application h1 {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.application-content {
+    width: 1000px;
+    height: auto;
+    background: #ffffff;
+    padding: 40px;
+    margin: 0 auto;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 6px 28px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 6px 28px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 28px 0 rgba(0, 0, 0, 0.5);
+}
+
+.application-item {
+    width: 100%;
+    height: auto;
+}
+
+.application-item h4 {
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+    color: #0D0735;
+    font-weight: normal;
+    margin: 22px 0;
+}
+
+.application-item p {
+    width: 100%;
+    height: auto;
+    color: #999999;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.application-item ul {
+    width: 100%;
+    height: auto;
+    padding: 0 30px;
+}
+
+.application-item ul li {
+    padding:5px 0;
+    font-size: 13px;
+    color: #999999;
+    line-height: 20px;
+    list-style-type: disc;
+}
+
+/*帮助文档*/
+.document {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 70px;
+    background: #0D0735;
+}
+
+.document h1 {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.document-content {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.document-item {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 330px;
+    float: left;
+    margin: 0 15px;
+    // padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+    background-image: -webkit-linear-gradient(top, #595bff, #6e33fb); /* Safari 5.1 - 6.0 */
+    background-image: -o-linear-gradient(bottom, #595bff, #6e33fb); /* Opera 11.1 - 12.0 */
+    background-image: -moz-linear-gradient(bottom, #595bff, #6e33fb); /* Firefox 3.6 - 15 */
+    background-image: linear-gradient(to bottom, #595bff, #6e33fb); /* 标准的语法 */
+    -webkit-box-shadow: 0 12px 6px -7px rgba(0, 0, 0, 1), 0 1px 9px 0 rgba(133, 156, 180, 0.51);
+    -moz-box-shadow: 0 12px 6px -7px rgba(0, 0, 0, 1), 0 1px 9px 0 rgba(133, 156, 180, 0.51);
+    box-shadow: 0 12px 6px -7px rgba(0, 0, 0, 1), 0 1px 9px 0 rgba(133, 156, 180, 0.51);
+    -webkit-border-radius: 1px 3px 3px 1px;
+    -moz-border-radius: 1px 3px 3px 1px;
+    border-radius: 3px 3px 3px 3px;
+}
+.document-item img{
+    width: 300px;
+    height: 200px;
+}
+.document-item img:hover{
+    cursor: pointer;
+    transform: scaleX(1.2);
+    opacity: 0.8;
+    
+}
+
+.document-item2 {
+    background: #00796B;
+}
+
+.document-item3 {
+    background: #EC6351;
+}
+
+.document-item4 {
+    background: #448AFF;
+}
+
+.document-item5 {
+    background: #FFA000;
+}
+
+.document-item .document-icon {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    width: 14px;
+    height: 24px;
+    background: #ffffff;
+}
+
+.document-item .document-icon:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #595bff;
+}
+
+.document-item2 .document-icon:after {
+    border-bottom: 7px solid #00796B;
+}
+
+.document-item3 .document-icon:after {
+    border-bottom: 7px solid #EC6351;
+}
+
+.document-item4 .document-icon:after {
+    border-bottom: 7px solid #448AFF;
+}
+
+.document-item5 .document-icon:after {
+    border-bottom: 7px solid #FFA000;
+}
+
+.document-item h4 {
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.document-item p {
+    width: 100%;
+    height: auto;
+    line-height: 18px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+}
+
+.document-item div {
+    width: 100%;
+    height: auto;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 20px 40px;
+}
+/*底部*/
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #0D0735;
+}
+
+.footer > p {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: #a8acB9;
+    font-size: 14px;
+}
+
+.footer .main-container {
+    width: 1200px;
+    height: 320px;
+    margin: 0 auto;
+    padding: 62px 40px;
+}
+
+.footer ul {
+    width: auto;
+    height: 100%;
+    padding: 0 50px;
+    float: left;
+    margin-right: 30px;
+}
+
+.footer ul:last-child {
+    margin-right: 0;
+}
+
+.footer ul li {
+    color: #7C8790;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.footer ul li.footer-title {
+    height: 50px;
+    color: #b8bfd3;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer ul li img {
+    width: 90px;
+    height: auto;
+}
+.outmiddle{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    background-color: #d9e8f5;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:50%;
+    height:100%;
+    padding:20px;
+    text-align:center;
+    color:darkgray;
+    transform: translate(-50%, -50%);
+    img{
+        width: 300px;
+        height: 200px;
+    }
+    h1{
+        margin-top: -130px;
+    }
+}
